@@ -1,1 +1,40 @@
-Hello world
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내 로그</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="card hero">
+        <h1>안녕하세요, 저는 Your Name입니다.</h1>
+        <p>
+          여기는 제 개인 로그입니다. 배우는 것, 만드는 것, 그리고 생각을 기록합니다.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="./write.html">문서 작성</a>
+          <a
+            class="button secondary"
+            href="https://github.com/bskoon/bskoon.github.io/new/main/posts"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub에서 글 폴더 열기</a
+          >
+        </div>
+      </section>
+
+      <h2 class="section-title">로그 목록</h2>
+      <section id="post-list" class="post-list" aria-live="polite"></section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

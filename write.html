@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문서 작성</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.4/dist/purify.min.js" defer></script>
+    <script src="./write.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <a class="button secondary" href="./index.html">홈으로 돌아가기</a>
+      <section class="card editor" style="margin-top: 14px">
+        <div>
+          <label for="title">파일 이름</label>
+          <input id="title" type="text" placeholder="예: my-first-log.md" />
+        </div>
+
+        <div>
+          <label for="markdown">마크다운</label>
+          <textarea id="markdown" placeholder="# 내 로그\n\n여기에 마크다운을 작성하세요..."></textarea>
+        </div>
+
+        <div class="hero-actions" style="margin-top: 0">
+          <button id="download" class="button primary" type="button">.md 다운로드</button>
+          <a
+            class="button secondary"
+            href="https://github.com/bskoon/bskoon.github.io/new/main/posts"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub에서 새 글 만들기</a
+          >
+        </div>
+      </section>
+
+      <h2 class="section-title">실시간 미리보기</h2>
+      <section id="preview" class="card preview markdown-body"></section>
+    </main>
+  </body>
+</html>
